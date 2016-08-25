@@ -1,0 +1,17 @@
+- Generate getter and setters for entity classes in application/models.
+php vendor/bin/doctrine orm:generate-entities --update-entities --generate-annotations=true  app/models/
+
+- Update the db schema with the entity classes in application/models.
+php vendor/bin/doctrine orm:schema-tool:update --force
+
+- Regenerate autoload for composer.
+php composer.phar dump-autoload
+
+- Generate API docs
+php vendor/jimgitsit/documen/documen.php generate-docs ../../../app/views/docs
+
+- Clear twig cache
+sudo rm -rf system/cache/twig/*/
+
+- Run phpunit test (from app/tests directory)
+../../vendor/phpunit/phpunit/phpunit TestTaskAPI

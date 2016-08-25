@@ -1,0 +1,4 @@
+vendor/
+.idea
+atlassian-ide-plugin.xml
+/app/config/site_config.php

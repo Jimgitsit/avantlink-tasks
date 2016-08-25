@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head lang="en"><meta charset="UTF-8"><title>AvantLink API</title><style>body {
+	font-family: arial, sans-serif;
+}
+
+.container {
+	width: 70%;
+	margin: auto;
+}
+
+.project-title {
+	text-align: center;
+	font-size: 33px;
+	padding-bottom: 18px;
+	border-bottom: 3px solid #9E9E9E;
+}
+
+.method-wrap {
+	border-top: 2px solid rgba(128, 128, 128, 0.19);
+	padding-top: 10px;
+}
+
+.name {
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.outside-class-name {
+	font-weight: 600;
+	font-size: 21px;
+}
+
+.class-name {
+	display: inline;
+}
+
+.method-name {
+	display: inline;
+}
+
+.short-desc {
+	margin: 10px 0 10px 20px !important;
+	font-style: italic;
+	font-size: 17px;
+}
+
+.long-desc {
+	margin-left: 30px;
+}
+
+.custom-label {
+	font-size: 18px;
+	font-weight: 600;
+}</style></head><body><div class="container"><h2 class="project-title">AvantLink API</h2><p class="project-description">This is a sample API for AvantLink</p><div class="method-wrap"><div class="custom-label">addTask</div><div class="short-desc">Adds a task.</div><div class="long-desc"><p>Sample call:</p>
+<pre><code>curl -i -X POST -d '{"title":"New Task"}' 'http://domain.com/api/add-task'</code></pre>
+<p>Response:</p>
+<pre><code>{
+  "success":true,
+  "msg":"Task added",
+  "task":{
+    "id":67,
+    "title":"New Task",
+    "created":"08\/25\/2016"
+  }
+}</code></pre></div></div><div class="method-wrap"><div class="custom-label">getAllTasks</div><div class="short-desc">Returns all tasks.</div><div class="long-desc"><p>Sample call:</p>
+<pre><code>curl -i -X GET 'http://domain.com/api/get-all-tasks'</code></pre>
+<p>Response:</p>
+<pre><code>[
+  {
+    "id":55,
+    "title":"asbsdgf",
+    "created":"08\/25\/2016"
+  },
+  {
+    "id":56,
+    "title":"lklkj",
+    "created":"08\/25\/2016"
+  }...
+]</code></pre></div></div><div class="method-wrap"><div class="custom-label">getTask</div><div class="short-desc">Returns a task with the given id.</div><div class="long-desc"><p>Sample call:</p>
+<pre><code>curl -i -X GET 'http://domain.com/api/get-task/2'</code></pre>
+<p>Response:</p>
+<pre><code>{
+  "id":67,
+  "title":"New Task",
+  "created":"08\/25\/2016"
+}</code></pre></div></div><div class="method-wrap"><div class="custom-label">removeTask</div><div class="short-desc">Removes a task with the given id.</div><div class="long-desc"><p>Sample call:</p>
+<pre><code>curl -i -X GET 'http://domain.com/api/remove-task/2'</code></pre>
+<p>Response:</p>
+<pre><code>{
+  "success":true,
+  "msg":"Task with id 2 was removed."
+}</code></pre></div></div></div>

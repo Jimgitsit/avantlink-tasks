@@ -1,0 +1,34 @@
+{
+    "name": "bluetree/limeaid_workflow",
+    "description": "Limeaid Workflow",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Jim McGowen",
+            "email": "jim@getbluetree.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "app/models",
+            "app/controllers",
+            "app/lib"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://jimgitsit@bitbucket.org/jimgitsit/documen.git"
+        }
+    ],
+    "require": {
+        "jimgitsit/documen": "dev-master@dev",
+        "jimgitsit/php-gozer": "2.0.*@dev",
+        "symfony/yaml": "2.7.*@dev",
+        "phpmailer/phpmailer": "~5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.4.*"
+    }
+}

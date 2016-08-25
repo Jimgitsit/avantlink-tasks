@@ -1,0 +1,48 @@
+#### API Endpoints ####
+default:
+    method: "GET|POST"
+    route: "/api"
+    controller: "TaskAPI"
+    action: "defaultAction"
+
+add-task:
+    method: "POST"
+    route: "/api/add-task"
+    controller: "TaskAPI"
+    action: "addTask"
+
+get-task:
+    method: "GET"
+    route: "/api/get-task/[i:id]"
+    controller: "TaskAPI"
+    action: "getTask"
+
+get-all-tasks:
+    method: "GET"
+    route: "/api/get-all-tasks"
+    controller: "TaskAPI"
+    action: "getAllTasks"
+
+remove-task:
+    method: "GET"
+    route: "/api/remove-task/[i:id]"
+    controller: "TaskAPI"
+    action: "removeTask"
+
+#authorize:
+#    method: "GET|POST"
+#    route: "/api/authorize"
+#    controller: "API"
+#    action: "authorize"
+
+### UI ###
+tasks:
+    method: "GET"
+    route: "/tasks"
+    controller: "TasksPage"
+    action: "defaultAction"
+
+docs:
+    method: "GET"
+    route: "/api/docs"
+    view: "/app/views/docs/index.html"

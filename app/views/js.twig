@@ -1,0 +1,16 @@
+<!-- Fixes no console errors in IE -->
+<script type="text/javascript">
+	if(!window.console || typeof console == 'undefined') {
+		var console = {
+			log : function(){},
+			warn : function(){},
+			error : function(){},
+			time : function(){},
+			timeEnd : function(){}
+		}
+	}
+</script>
+
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="/js/url-params.js"></script> -->

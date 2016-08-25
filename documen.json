@@ -1,0 +1,9 @@
+{
+	"output-dir": "/app/views/docs",
+	"html-wrap": false,
+	"project-title": "AvantLink API",
+	"project-description": "This is a sample API for AvantLink",
+	"css-file": "/app/public/css/documen.css",
+	"classes": ["TaskAPI"],
+	"sort-methods": true
+}
